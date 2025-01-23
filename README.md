@@ -1,7 +1,5 @@
 ### **🌟 Bank Account Management System 🌟**
 
-![12291285_Startup-managers-presenting-and-analyzing-sales-growth-chart-1024x683](https://github.com/user-attachments/assets/e0329bcc-619e-4cc0-8ae8-e09d5e32da3d)
-
 #### **🎯 Learning Goals**
 1. **Understand Core Programming Concepts**: Functions, loops, conditional statements, and lists.
 2. **Work with Python for Real-Life Applications**: Simulate a bank management system with real-world features.
