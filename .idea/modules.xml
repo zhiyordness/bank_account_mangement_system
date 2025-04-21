@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bank_account_mangement_system.iml" filepath="$PROJECT_DIR$/.idea/bank_account_mangement_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bank_Account_Mangement_System.iml" filepath="$PROJECT_DIR$/.idea/Bank_Account_Mangement_System.iml" />
     </modules>
   </component>
 </project>

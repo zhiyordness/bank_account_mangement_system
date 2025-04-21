@@ -26,7 +26,8 @@ def display_menu():
 
 def create_account():
     """Create a new account."""
-    pass  # TODO: Add logic
+    name = input('Please, enter your full name: ')
+
 
 def deposit():
     """Deposit money into an account."""
@@ -96,5 +97,5 @@ def main():
         else:
             print("❌ Invalid choice. Try again!")
 
-if __name__ == "__main__":
-    main()
+
+main()
