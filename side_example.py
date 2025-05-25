@@ -173,11 +173,34 @@ def list_accounts(num_acts: list, accounts: list, money_list: list ):
 def transfer_funds():
     """Transfer funds between two accounts."""
     pass  # TODO: Add logic
+    # 1. Ask for the account number of the sender!
+    # 2. Check if the account exists!
+    # 3. Find the name of the account in the system!
+    # 4. Ask if the name of the account is correct!
+    # 5. Ask for the account number of the receiver!
+    # 6. Check if the account exists!
+    # 7. Find the name of the account in the system!
+    # 8. Ask if the name of the account is correct!
+    # 9. Ask what amount to transfer!
+    # 10. Ask for confirmation and PIN of the user!
+    # 11. Minus the account of the sender and plus the account of the receiver!
+    # 12. Save the transaction in the transaction log!
+    # 13. Inform that the transaction went through successfully!
+
 
 
 def view_transaction_history():
     """View transactions for an account."""
     pass  # TODO: Add logic
+    # 1. Ask if the needed info is for a specific account or in general!
+    # 2. Check if the account exists!
+    # 3. For a specific account ask for the account number!#
+    # 4. Find the name of the account in the system!
+    # 5. Ask if the name of the account is correct!
+    # 6. Ask for confirmation and PIN of the user! Pin verifier function needed!
+    # 7. Show the transactions and offer to save it in a file!
+    # 8. Do you wish to continue function!
+    # 9. Steps 1 to 8 for all transactions!
 
 
 def apply_for_loan():
@@ -200,7 +223,7 @@ def create_pin_code():
     print('Create a PIN code!')
     while True:
         pin = input('Enter four digits: ')
-        if len(pin) != 4:
+        if len(pin) != 4 or not pin.isdigit():
             print('Invalid PIN. Try again!')
             continue
         else:
