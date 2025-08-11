@@ -293,7 +293,7 @@ def transfer_funds():
 
 def view_transaction_history():
     """View transactions for an account."""
-    pass  # TODO: Add logic
+    # TODO: Add logic
     # 1. Ask if the needed info is for a specific account or in general!
     # 2. Check if the account exists!
     # 3. For a specific account ask for the account number!#
@@ -302,7 +302,46 @@ def view_transaction_history():
     # 6. Ask for confirmation and PIN of the user! Pin verifier function needed!
     # 7. Show the transactions and offer to save it in a file!
     # 8. Do you wish to continue function!
+    while True:
+        print('Follow the steps for transactions history!')
+        acc_num = int(input('Please, enter an account number: '))
 
+        if acc_num in accounts.keys():
+            print('We\'ve found the account.')
+            name = input('Please, enter fullname: ')
+            if name == accounts[acc_num]["Name"]:
+                print("Success!")
+                print()
+                print("Enter Admin PIN to confirm the transaction: ")
+                check_admin_pin = int(input())
+                if check_admin_pin == admin_pin_code:
+                    for account in transaction_histories.keys():
+                        if acc_num == account:
+                            print(f"{transaction_histories[acc_num]}", sep="\n")
+                            break
+                        else:
+                            continue
+
+                else:
+                    print("Sorry! Wrong PIN! You need to start over")
+                    break
+            else:
+                print("Wrong Name. This Name does not match the name on the account.\n")
+                print('Would you like to try again? - 1-> Yes 2-> No: ')
+                answer = input()
+                if answer == '1':
+                    continue
+                else:
+                    break
+        else:
+            print("We couldn't find the account\n")
+            print('Would you like to try again? - 1-> Yes 2-> No: ')
+            answer = input()
+            if answer == '1':
+                continue
+            else:
+                break
+        break
 
 def apply_for_loan():
     """Allow user to apply for a loan."""
@@ -340,6 +379,11 @@ while True:
         transfer_funds()
     elif choice == 7:
         view_transaction_history()
+        #for the transaction history is needed to make a function
+        # that adds the records into a list in a list or a matrix
+        # with three columns acc_num, type_of_transaction and amount.
+        # This way it is going to be easy to print out the transactions.
+
     elif choice == 8:
         apply_for_loan()
     elif choice == 9:
